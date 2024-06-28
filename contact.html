@@ -1,0 +1,377 @@
+<html>
+   <title>Contact</title>
+   <head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_contact.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family: 'Vermin Vibes 1989';
+    src: url('fonts/Vermin-Vibes-1989.woff2') format('woff2'),
+        url('fonts/Vermin-Vibes-1989.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VCR';
+    src: url('fonts/VCROSDMono.woff2') format('woff2'),
+        url('fonts/VCROSDMono.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body {
+    background: #3c096c;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    font-family: "Pixelify Sans", serif;
+}
+
+.logo_image {
+    width: 20%;
+    height: 20%;
+    justify-content: left;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: grey;
+    transition: .3s;
+    
+}
+
+.navbar a:hover::before {
+    width: 100%
+}
+
+.header p {
+    font-size: 20;
+    padding: 5;
+    padding-top: 0;
+    letter-spacing: normal;
+    color: #00fc81;
+    font-family: 'Pixelify Sans', serif;
+ }  
+
+h1 {
+    text-align: center;
+    margin-top: 60;
+    font-family: 'Vermin Vibes 1989', serif;
+    font-size: 90;
+}
+
+p {
+    font-family: "VCR",serif;
+    letter-spacing: -2px;
+}
+
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+
+}
+
+.pink {
+    background: #c4007a;
+}
+
+.purple {
+    background: #3c096c;
+}
+
+.segment {
+    min-height: 100;
+    background-image: linear-gradient(to bottom,#c4007a,#3c096c);
+
+}
+
+h2 {
+    color: white;
+    font-family: 'Vermin Vibes 1989', serif;
+    text-align: center;
+    letter-spacing: 2;
+    font-size: 50;
+    text-decoration: underline;
+
+}
+
+label {
+    color: white;
+    text-align: left;
+    font-size: 20;
+    font-family: 'Pixelify Sans';
+    margin-top: 20px;
+}
+
+.white_text {
+    color: white;
+    font-size: 20;
+    font-family: 'Pixelify Sans';
+}
+
+
+.name {
+    width: 30%;
+    height: 20;
+}
+
+form {
+    margin: 50px;
+
+}
+
+select {
+    width: 30%;
+}
+ 
+input[type-radio] {
+    color: white;
+    font-size: 20;
+}
+
+legend {
+  background-color: #00fc81;
+  color: black;
+  padding: 5px 10px;
+  font-family: 'VCR';
+  margin-left: 30;
+}
+
+fieldset {
+    padding: 20;
+}
+
+
+
+
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.flex-container_foot {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-family: 'VCR', serif;
+}
+
+.flex-box_foot {
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+    width:  100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.8);
+    color: rgb(179, 162, 162);
+    font-size: 20px;   
+    font-family: 'VCR', serif;
+    line-height: 50px;
+    text-shadow: 1px 1px black;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+ 
+
+}
+
+.flex-container_foot2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-family: 'VCR', serif;
+}
+
+.flex-box_foot2 {
+    padding: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0;
+    width:  20%;
+    height: 100px;
+    background: transparent;
+    color: rgb(179, 162, 162);
+    font-size: 20px;   
+    font-family: 'VCR', serif;
+    line-height: 20px;
+    text-shadow: 1px 1px black;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+ 
+
+}
+
+.footer {
+    min-height: 100px;
+    border-radius: 100px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+</head>
+<section class="pink">
+<body vlink="green" alink="yellow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<header class="header">
+<a href="homepage.html" class="logo">
+<img src="images/logo.png" title="HOME">
+</a>
+<nav class="navbar">
+   <a href="homepage.html" hre>Home</a>
+   <a href="prehistory.html">The Pre-History</a>
+   <a href="thegoldenera.html">The Golden Era</a>
+   <a href="homeconsoles.html">Home Consoles</a>
+   <a href="pcgaming.html">PC Gaming</a>
+   <a href="scary.html">The Enigmas</a>
+   <a href="contact.html">Contact</a>
+</nav>
+<a href="info.html" class="logo">
+<img src="images/contra.png" title="Some Extra Information">
+</a>
+<p>&#8592; Click for Info</p>
+</header>
+<br><br>
+<h1>Contact Me!</h1>
+<p style="text-align: center; font-size: 30; margin-top: 20px; margin: 20;">Do you have a question? A query possibly? Do you want to talk about a cool game that you found? Do you have feedback for my site? Go ahead, fill up that form. It will help you get in touch with me. Thank you for visiting! </p>
+</section>
+<div class="segment"></div>
+<section class="purple">
+
+<form method="post" action="mailto:h-0304-21@dpspune.com">
+<fieldset>
+<legend>Contact Form</legend>
+<h2>FORM</h2>
+<label for="name1">First Name-</label>
+<textarea class="name" id="name1"></textarea><br><br>
+<label for="name2">Last Name-</label>
+<textarea class="name" id="name2"></textarea>
+<br><br>
+<label for="country">What country do you live in?</label>
+<select name="country" id="country">
+    <option value="australia">Australia</option>
+    <option value="india">India</option>
+    <option value="pakistan">Pakistan</option>
+    <option value="usa">USA</option>
+</select>
+<br><br>
+<label for="checkbox">Would you like to subscribe to our newsletter?</label>
+<input type="checkbox" name="check1" value="newsletteryes" id="checkbox"><br><br>
+<label for="mail">Your Email Id-</label>
+<textarea class="name" id="mail"></textarea><br><br>
+<label for="mail">What is your mail address?</label>
+<select name="mail" id="mail">
+    <option value="arush">arushkumar@gmail.com</option>
+    <option value="jay">jay.kapoor@gmail.com</option>
+    <option value="yash">yashsingh12@gmail.com</option>
+    <option value="sanya">sanyatiwari@gmail.com</option>
+</select>
+<br><br>
+<label for="radio1">Please Select Your Gender</label><br><br>
+<div class="white_text">
+<input type="radio" name="gender" value="male" id="radio1">&nbsp; Male
+<input type="radio" name="gender" value="female" id="radio2">&nbsp; Female
+<input type="radio" name="gender" value="nopreference" id="radio2">&nbsp; Prefer not to say
+<br><br>
+<label for="comments">Leave your messages here!</label><br><Br>
+<textarea class="name2" id="comments" rows="5" cols="50"></textarea><br><br>
+<button class="button-74" role="button">SEND!</button> &nbsp;&nbsp;&nbsp;&nbsp;
+<button class="button-74" role="reset">RESET!</button>
+</div>
+</form>
+</fieldset>
+</section>
+<section>
+<section class="footer">
+    <br>
+    <div class="flex-container_foot">
+        <div class="flex-box_foot">
+            <div class="flex-container_foot2">
+                <div class="flex-box_foot2">
+                Made By Bhrigu Warthe<br>
+                 &nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;2023
+           </div>
+           </div>
+        
+</section>
